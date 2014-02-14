@@ -1,0 +1,5 @@
+#Rint.Logon:  /home/whit/rootderp.C
+#Rint.Logon:  /home/whit/rootlogon.C
+Browser.Name: TRootBrowser
+OpenGL.SavePicturesViaFBO: off
+#Root.DatabasePDG: /home/whit/.pdg_table.txt
