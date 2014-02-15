@@ -4,3 +4,7 @@
 [description:"Get ZE the cherenkov manuscript" end:"1391703571" entry:"1386362174" modified:"1391703571" priority:"H" status:"completed" tags:"cherenkov" uuid:"6c35bb0a-0429-45d3-8e74-0e414e82d0fd"]
 [description:"For runs 72795 and 72999 run script, cherenkov to get the peaks and use mysql to set them to the default values for - 1 and - 2" end:"1391703565" entry:"1386362144" modified:"1391703565" priority:"H" status:"completed" tags:"cherenkov" uuid:"476f30ca-897f-47dd-92ec-d6d0ee710818"]
 [description:"Fix POLRAD for arbitrary angle" end:"1381769636" entry:"1381419241" modified:"1381769636" status:"completed" uuid:"58b7edd5-8225-4918-a16e-5c75e15e105c"]
+[description:"EINN room share at Dionysos key 1BF8E91E" end:"1392436933" entry:"1380849464" modified:"1392436933" status:"completed" uuid:"c3b8eb56-a354-4450-b8ca-aa10a26b2e19"]
+[description:"Call blue cross about bill" end:"1392436918" entry:"1380847649" modified:"1392436918" priority:"H" status:"completed" uuid:"a60f19d5-320d-4697-827f-795027056add"]
+[description:"Register for EINN and book room" end:"1392436923" entry:"1380847725" modified:"1392436923" project:"EINN" status:"completed" uuid:"4f7ac556-445d-475a-94a7-353460a4f61a"]
+[description:"Find out if a visa is needed for EINN" end:"1392436928" entry:"1380847742" modified:"1392436928" project:"EINN" status:"completed" uuid:"f49d8750-0832-4285-b577-b003f55407a4"]
