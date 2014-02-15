@@ -177,6 +177,7 @@ export GCCXMLPATH=/usr/local
 
 # CERNLIB
 export CERN=/home/whit/cernlib
+#export CERN=/home/whit/cernlib_gcc43
 export CERN_LEVEL=2006b
 export CERN_ROOT=$CERN/$CERN_LEVEL
 #export CVSCOSRC=$CERN/$CERN_LEVEL/src

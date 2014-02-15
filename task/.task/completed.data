@@ -1,0 +1,6 @@
+[description:"RC for W and phi bins" end:"1391705132" entry:"1381338007" modified:"1391705132" status:"completed" uuid:"1ae91d25-59d0-47bc-87c7-ce3f0278d4f5"]
+[description:"Compare IRT from polrad to IRT using equivalent radiators" end:"1391703599" entry:"1381336995" modified:"1391703599" status:"completed" uuid:"f124b7cf-f76d-4da4-bf30-dadb0f31f906"]
+[description:"Check POLRAD born polarized cross sections agains POLRADs" end:"1391703582" entry:"1381419257" modified:"1391703582" status:"completed" uuid:"f6cbcbf4-a40e-4e1e-93a4-7e92df7cc9ef"]
+[description:"Get ZE the cherenkov manuscript" end:"1391703571" entry:"1386362174" modified:"1391703571" priority:"H" status:"completed" tags:"cherenkov" uuid:"6c35bb0a-0429-45d3-8e74-0e414e82d0fd"]
+[description:"For runs 72795 and 72999 run script, cherenkov to get the peaks and use mysql to set them to the default values for - 1 and - 2" end:"1391703565" entry:"1386362144" modified:"1391703565" priority:"H" status:"completed" tags:"cherenkov" uuid:"476f30ca-897f-47dd-92ec-d6d0ee710818"]
+[description:"Fix POLRAD for arbitrary angle" end:"1381769636" entry:"1381419241" modified:"1381769636" status:"completed" uuid:"58b7edd5-8225-4918-a16e-5c75e15e105c"]

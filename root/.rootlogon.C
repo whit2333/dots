@@ -9,7 +9,6 @@
  *  
  *
  */
-   //gStyle->Reset();
    gErrorIgnoreLevel=1; // Ignore Info
    //gErrorIgnoreLevel=1001; // Ignore Info
    //gErrorIgnoreLevel=2001; // Ignore Warnings
@@ -28,179 +27,27 @@
    gSystem->Load("libInSANE.so");
    gROOT->SetMacroPath(Form("%s:%s/main/scripts",gROOT->GetMacroPath(),gSystem->Getenv("InSANEDIR")));
 
-   //using namespace CLHEP;
-
-   /// WEvents Libraries
-   //gSystem->AddIncludePath("-I${WEVENTSDIR}/include");
-   //gSystem->Load("${WEVENTSDIR}/lib/libWG4.so");
-
-   /// NucDB Libraries
+   // NucDB Libraries
    gSystem->AddIncludePath(" -I$NucDB_DIR/include ");
    gSystem->Load("$NucDB_DIR/lib/libNucDB.so");
-   //gSystem->Load("/home/whit/TestSomething/lib/libATest.so");
 
-   /// Frequently used pointers
 
-   //SANERunManager      * rman = SANERunManager::GetRunManager();
-   //SANEAnalysisManager * aman = SANEAnalysisManager::GetAnalysisManager();
-   ////aman->SetupFolders();
-   //rman->SetVerbosity(1);
+   // ----------------------------------------------------------------------
+   // Style
+   // ----------------------------------------------------------------------
+   gStyle->Reset();
+   gROOT->LoadMacro("$HOME/.root/load_style.cxx");
 
-   /// Geant4 libraries from GEANT4 VMC
-   //gROOT->LoadMacro("/usr/local/geant4_vmc/examples/macro/basiclibs.C");
-   //basiclibs();
-   //  gROOT->LoadMacro("/usr/local/geant4_vmc/examples/macro/g4libs.C");
-   //  g4libs();
+   load_style("SingleSquarePlot");
+   gROOT->SetStyle("SingleSquarePlot");
 
-   /// STYLE
-   gROOT->SetStyle("Modern");
+   //load_style("OldDefault");
+   //gROOT->SetStyle("OldDefault");
 
-   /// load some useful scripts Creates a nice color palette
+   // load some useful scripts Creates a nice color palette
    gROOT->LoadMacro(Form("%s/src/set_plot_style.cxx",gSystem->Getenv("HOME") ) );
    gROOT->LoadMacro(Form("%s/src/color_scheme.cxx",gSystem->Getenv("HOME") ) );
 
-   /// Turn off some borders
-   gStyle->SetCanvasBorderMode(0);
-   gStyle->SetFrameBorderMode(0);
-   gStyle->SetPadBorderMode(0);
-   gStyle->SetDrawBorder(0);
-   gStyle->SetCanvasBorderSize(0);
-   gStyle->SetFrameBorderSize(0);
-   gStyle->SetPadBorderSize(0);
-   gStyle->SetTitleBorderSize(0);
-
-   gStyle->SetAxisColor(1, "xyz");
-   gStyle->SetCanvasColor(0);
-   gStyle->SetFrameFillColor(0);
-   gStyle->SetFrameLineColor(1);
-   gStyle->SetHistFillColor(0);
-   gStyle->SetHistLineColor(1);
-   //gStyle->SetPadColor(40);
-   gStyle->SetPadColor(kWhite);
-   gStyle->SetTitleColor(1);
-   gStyle->SetTitleTextColor(1);
-   gStyle->SetLabelColor(1,"xyz");
-
-
-   /// Set the size of the default canvas
-   gStyle->SetCanvasDefH(600);
-   gStyle->SetCanvasDefW(600*1.618);
-   //gStyle->SetCanvasDefX(10);
-   //gStyle->SetCanvasDefY(10);
-
-   /// Text font code = 10*fontnumber + precision
-   // Fonts:  Helvetica (42), upright, normal
-   // 132 times-medium-r-normal 
-   int style_label_font=132;
-
-   /// Axes Numbers are called "Labels"
-   gStyle->SetLabelFont(style_label_font,"xyz");
-   gStyle->SetLabelSize(0.04,"xyz");
-   gStyle->SetLabelOffset(0.005,"y");
-   gStyle->SetLabelOffset(0.009,"xz");
-   gStyle->SetTitleSize(0.04,"xyz"); // axis titles
-   gStyle->SetTitleOffset(1.005,"xyz");
-   gStyle->SetStripDecimals(kFALSE); // if we have 1.5 do not set 1.0 -> 1
-   TGaxis::SetMaxDigits(4); // restrict the number of digits in labels
-   gStyle->SetLabelColor(1,"xyz");
-
-   //gStyle->SetStatFont(style_label_font);
-   gStyle->SetTitleFont(style_label_font,"xyz"); // axis titles
-
-   // Histogram's Main Title
-   //gStyle->SetTitleFont(style_label_font,"h"); // histogram title
-   gStyle->SetTitleSize(0.04,"h"); // histogram title
-   //gStyle->SetTitleH(0.1);
-   //gStyle->SetTitleX(0.12); // spot where histogram title goes
-   //gStyle->SetTitleY(0.99); // spot where histogram title goes
-   //gStyle->SetTitleW(0.78); // width computed so that title is centered
-
-
-   /// Marker Style
-   gStyle->SetEndErrorSize(1);
-   gStyle->SetErrorX(0.0);
-
-   /// Set Line Widths
-   gStyle->SetFrameLineWidth(1);
-   gStyle->SetHistLineWidth(1);
-
-   /// Show functions in blue(4)
-   gStyle->SetFuncColor(1);
-   gStyle->SetFuncStyle(10);
-   gStyle->SetFuncWidth(1);
-
-   /// Set all fill styles to be empty and line styles to be solid
-   gStyle->SetFrameFillStyle(0);
-   gStyle->SetHistFillStyle(1001);
-   gStyle->SetFrameLineStyle(0);
-   gStyle->SetHistLineStyle(0);
-   gStyle->SetTitleStyle(0);
-   gStyle->SetFuncStyle(1);
-
-   /// Set margins 
-   gStyle->SetPadTopMargin(0.09);
-   //gStyle->SetPadBottomMargin(0.12);
-   gStyle->SetPadBottomMargin(0.09);
-   gStyle->SetPadLeftMargin(0.09);
-   gStyle->SetPadRightMargin(0.09);
-
-   /// Log axes
-   gStyle->SetOptLogx(0);
-   gStyle->SetOptLogy(0);
-   gStyle->SetOptLogz(0);
-
-   /// Set Data/Stat/... and other options
-   gStyle->SetStatColor(0);
-   gStyle->SetStatTextColor(1);
-/*   gStyle->SetFitFormat("6.4e");*/
-   gStyle->SetOptDate(0);
-   gStyle->SetDateX(0.01);
-   gStyle->SetDateY(0.01);
-   gStyle->SetOptFile(0);
-
-   gStyle->SetOptFit(0);
-/*   gStyle->SetOptStat(1110);// no histogram title*/
-
-   gStyle->SetOptStat(0);// no stats
-   //gStyle->SetOptStat(10);// no histogram title
-/*   gStyle->SetStatFormat("6.4e");*/
-/*   gStyle->SetStatStyle(0); // hollow*/
-/*   gStyle->SetStatStyle(1001); // filled*/
-   gStyle->SetStatStyle(0); // hollow
-   gStyle->SetStatBorderSize(0);
-   gStyle->SetStatW(0.20);
-   gStyle->SetStatH(0.125);
-   //gStyle->SetStatX(0.90);
-   //gStyle->SetStatY(0.90);
-   gStyle->SetStatX(1.0-gStyle->GetPadRightMargin()-0.01);
-   gStyle->SetStatY(1.0-gStyle->GetPadTopMargin()-0.01);
-
-   gStyle->SetOptTitle(1);
-
-   /// Set tick marks and turn off grids
-   //gStyle->SetNdivisions(1005,"xyz");
-   //gStyle->SetNdivisions(510,"xyz");
-   gStyle->SetPadTickX(1);
-   gStyle->SetPadTickY(1);
-   gStyle->SetTickLength(0.02,"xyz");
-   //gStyle->SetPadGridX(1);
-   //gStyle->SetPadGridY(1);
-   gStyle->SetPadGridX(0);
-   gStyle->SetPadGridY(0);
-
-   /// no supressed zeroes!
-   gStyle->SetHistMinimumZero(kTRUE);
-
-   /// Set paper size for life in the US
-   gStyle->SetPaperSize(TStyle::kUSLetter);
-   // or europe
-   //gStyle->SetPaperSize(TStyle::kA4);
-
-   /// Uncommenting this leads to weird font behavior (especially for small text)....
-   //gStyle->SetCanvasPreferGL(kTRUE); 
-
-   /// Force this style on all histograms
-   //gROOT->ForceStyle();
 
    ///// use a pretty palette for color plots
    //gStyle->SetPalette(1,0);
