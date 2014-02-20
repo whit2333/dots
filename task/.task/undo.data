@@ -180,3 +180,10 @@ time 1392438995
 old [annotation_1392438956:"Started task" description:"finish talk draft and email to collaboration" due:"1392440400" entry:"1392438571" modified:"1392438956" project:"SANE" start:"1392438956" status:"pending" uuid:"8d8731f6-d6a5-456f-88c1-23c7551b43d9"]
 new [annotation_1392438956:"Started task" annotation_1392438995:"Stopped task" description:"finish talk draft and email to collaboration" due:"1392440400" entry:"1392438571" modified:"1392438995" project:"SANE" status:"pending" uuid:"8d8731f6-d6a5-456f-88c1-23c7551b43d9"]
 ---
+time 1392440449
+old [description:"Buy part for smart car- Smart Fortwo Front Side Blinker Driver Side" entry:"1386363552" status:"pending" uuid:"1d40dc97-647e-47b6-9e70-acd71091c124"]
+new [description:"Buy part for smart car- Smart Fortwo Front Side Blinker Driver Side" entry:"1386363552" modified:"1392440449" project:"life" status:"pending" tags:"car" uuid:"1d40dc97-647e-47b6-9e70-acd71091c124"]
+---
+time 1392908097
+new [description:"Fit all R data for positron background" entry:"1392908097" project:"SANE" status:"pending" uuid:"1eaa90c5-f706-4599-8708-dc4639ee9c4a"]
+---
