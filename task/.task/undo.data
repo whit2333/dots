@@ -180,3 +180,62 @@ time 1392438995
 old [annotation_1392438956:"Started task" description:"finish talk draft and email to collaboration" due:"1392440400" entry:"1392438571" modified:"1392438956" project:"SANE" start:"1392438956" status:"pending" uuid:"8d8731f6-d6a5-456f-88c1-23c7551b43d9"]
 new [annotation_1392438956:"Started task" annotation_1392438995:"Stopped task" description:"finish talk draft and email to collaboration" due:"1392440400" entry:"1392438571" modified:"1392438995" project:"SANE" status:"pending" uuid:"8d8731f6-d6a5-456f-88c1-23c7551b43d9"]
 ---
+time 1392502290
+new [description:"Fix InSANEInelasticRadiative to inherit directly from InSANEDiffXSec so that it can be properly used with InSANECompositeDiffXSec and thus useful in the dilution calculations" entry:"1392502290" status:"pending" uuid:"5e8092ee-ff7b-43d6-8d73-c53504b09862"]
+---
+time 1392502332
+new [description:"InSANETargetMaterial GetRate needs to use the radiated cross section to get the rate. not the born" entry:"1392502332" status:"pending" uuid:"0b8b3cc7-ebcc-4b2f-830b-43a1c9240d94"]
+---
+time 1392502411
+old [description:"Fix InSANEInelasticRadiative to inherit directly from InSANEDiffXSec so that it can be properly used with InSANECompositeDiffXSec and thus useful in the dilution calculations" entry:"1392502290" status:"pending" uuid:"5e8092ee-ff7b-43d6-8d73-c53504b09862"]
+new [description:"Fix InSANEInelasticRadiative to inherit directly from InSANEDiffXSec so that it can be properly used with InSANECompositeDiffXSec and thus useful in the dilution calculations" entry:"1392502290" modified:"1392502411" project:"SANE" status:"pending" uuid:"5e8092ee-ff7b-43d6-8d73-c53504b09862"]
+---
+time 1392502411
+old [description:"InSANETargetMaterial GetRate needs to use the radiated cross section to get the rate. not the born" entry:"1392502332" status:"pending" uuid:"0b8b3cc7-ebcc-4b2f-830b-43a1c9240d94"]
+new [description:"InSANETargetMaterial GetRate needs to use the radiated cross section to get the rate. not the born" entry:"1392502332" modified:"1392502411" project:"SANE" status:"pending" uuid:"0b8b3cc7-ebcc-4b2f-830b-43a1c9240d94"]
+---
+time 1392502475
+old [description:"InSANETargetMaterial GetRate needs to use the radiated cross section to get the rate. not the born" entry:"1392502332" modified:"1392502411" project:"SANE" status:"pending" uuid:"0b8b3cc7-ebcc-4b2f-830b-43a1c9240d94"]
+new [depends:"5e8092ee-ff7b-43d6-8d73-c53504b09862" description:"InSANETargetMaterial GetRate needs to use the radiated cross section to get the rate. not the born" entry:"1392502332" modified:"1392502475" project:"SANE" status:"pending" uuid:"0b8b3cc7-ebcc-4b2f-830b-43a1c9240d94"]
+---
+time 1392502508
+old [description:"SANE RC vs all A1 and A2 models" due:"1280548800" entry:"1381336678" modified:"1392435158" status:"pending" tags:"RC" uuid:"d6a9df3d-2741-4d2e-a450-4b2777f6504b"]
+new [description:"SANE RC vs all A1 and A2 models" due:"1280548800" entry:"1381336678" modified:"1392502508" project:"SANE" status:"pending" tags:"RC" uuid:"d6a9df3d-2741-4d2e-a450-4b2777f6504b"]
+---
+time 1392502556
+old [description:"SANE Kinematics with 1.3 GeV energy cut" entry:"1381348832" status:"pending" uuid:"2c8bec1a-4f65-4be1-8f4c-b76ba94fcc85"]
+new [description:"SANE Kinematics with 1.3 GeV energy cut" entry:"1381348832" modified:"1392502556" project:"SANE" status:"pending" uuid:"2c8bec1a-4f65-4be1-8f4c-b76ba94fcc85"]
+---
+time 1392502556
+old [description:"Compare elastic RC for different models:wq" entry:"1381435312" status:"pending" uuid:"0b610606-043c-457a-9216-03f74e1c805e"]
+new [description:"Compare elastic RC for different models:wq" entry:"1381435312" modified:"1392502556" project:"SANE" status:"pending" uuid:"0b610606-043c-457a-9216-03f74e1c805e"]
+---
+time 1392502556
+old [description:"Figure out if bump in asymmetries is real or due to bigcal" entry:"1382955348" status:"pending" uuid:"549b93c3-a84b-4a1e-a223-282d92dcfc3b"]
+new [description:"Figure out if bump in asymmetries is real or due to bigcal" entry:"1382955348" modified:"1392502556" project:"SANE" status:"pending" uuid:"549b93c3-a84b-4a1e-a223-282d92dcfc3b"]
+---
+time 1392502556
+old [description:"calculate asymetry from photos produced in tracker via double hit cut" entry:"1383292278" status:"pending" uuid:"de45d321-9c04-41c3-9d1b-18d95f27a151"]
+new [description:"calculate asymetry from photos produced in tracker via double hit cut" entry:"1383292278" modified:"1392502556" project:"SANE" status:"pending" uuid:"de45d321-9c04-41c3-9d1b-18d95f27a151"]
+---
+time 1392610903
+new [description:"Hall C meeting arrangments" entry:"1392610903" priority:"H" status:"pending" uuid:"d81c6f63-28e5-4e79-9b8d-61cd1d53ae75"]
+---
+time 1392611152
+new [description:"Hall C meeting arrangments" entry:"1392611152" priority:"H" status:"pending" uuid:"7dfe1ba2-517a-4aeb-ae9f-128df9efe290"]
+---
+time 1392821782
+new [description:"Create HelicityDistribution and derived pdf class" entry:"1392821782" status:"pending" uuid:"e91ed51b-3841-4310-ac55-c386f64b645d"]
+---
+time 1392821859
+old [description:"Fix InSANEInelasticRadiative to inherit directly from InSANEDiffXSec so that it can be properly used with InSANECompositeDiffXSec and thus useful in the dilution calculations" entry:"1392502290" modified:"1392502411" project:"SANE" status:"pending" uuid:"5e8092ee-ff7b-43d6-8d73-c53504b09862"]
+new [description:"Fix InSANEInelasticRadiative to inherit directly from InSANEDiffXSec so that it can be properly used with InSANECompositeDiffXSec and thus useful in the dilution calculations" end:"1392821859" entry:"1392502290" modified:"1392821859" project:"SANE" status:"completed" uuid:"5e8092ee-ff7b-43d6-8d73-c53504b09862"]
+---
+time 1392821889
+old [description:"Create HelicityDistribution and derived pdf class" entry:"1392821782" status:"pending" uuid:"e91ed51b-3841-4310-ac55-c386f64b645d"]
+new [description:"Create HelicityDistribution and derived pdf class" entry:"1392821782" modified:"1392821889" start:"1392821889" status:"pending" uuid:"e91ed51b-3841-4310-ac55-c386f64b645d"]
+---
+time 1392826190
+old [description:"Create HelicityDistribution and derived pdf class" entry:"1392821782" modified:"1392821889" start:"1392821889" status:"pending" uuid:"e91ed51b-3841-4310-ac55-c386f64b645d"]
+new [description:"Create HelicityDistribution and derived pdf class" entry:"1392821782" modified:"1392826190" status:"pending" uuid:"e91ed51b-3841-4310-ac55-c386f64b645d"]
+---
