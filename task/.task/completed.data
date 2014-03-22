@@ -1,3 +1,8 @@
+[description:"SANE RC vs all A1 and A2 models" due:"1280548800" end:"1393040823" entry:"1381336678" modified:"1393040823" project:"SANE" status:"completed" tags:"RC" uuid:"d6a9df3d-2741-4d2e-a450-4b2777f6504b"]
+[description:"HallC users meeting" due:"1393045200" end:"1393040831" entry:"1392438421" modified:"1393040831" project:"SANE" status:"completed" uuid:"0139dfd8-add9-483c-aae7-425bbb027c40"]
+[annotation_1392438956:"Started task" annotation_1392438995:"Stopped task" description:"finish talk draft and email to collaboration" due:"1392440400" end:"1393040802" entry:"1392438571" modified:"1393040802" project:"SANE" status:"completed" uuid:"8d8731f6-d6a5-456f-88c1-23c7551b43d9"]
+[description:"Hall C meeting arrangments" end:"1393040813" entry:"1392610903" modified:"1393040813" priority:"H" status:"completed" uuid:"d81c6f63-28e5-4e79-9b8d-61cd1d53ae75"]
+[description:"Hall C meeting arrangments" end:"1393040811" entry:"1392611152" modified:"1393040811" priority:"H" status:"completed" uuid:"7dfe1ba2-517a-4aeb-ae9f-128df9efe290"]
 [description:"Fix InSANEInelasticRadiative to inherit directly from InSANEDiffXSec so that it can be properly used with InSANECompositeDiffXSec and thus useful in the dilution calculations" end:"1392821859" entry:"1392502290" modified:"1392821859" project:"SANE" status:"completed" uuid:"5e8092ee-ff7b-43d6-8d73-c53504b09862"]
 [description:"RC for W and phi bins" end:"1391705132" entry:"1381338007" modified:"1391705132" status:"completed" uuid:"1ae91d25-59d0-47bc-87c7-ce3f0278d4f5"]
 [description:"Compare IRT from polrad to IRT using equivalent radiators" end:"1391703599" entry:"1381336995" modified:"1391703599" status:"completed" uuid:"f124b7cf-f76d-4da4-bf30-dadb0f31f906"]
