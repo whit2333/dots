@@ -1,3 +1,4 @@
+[description:"Fix InSANEInelasticRadiative to inherit directly from InSANEDiffXSec so that it can be properly used with InSANECompositeDiffXSec and thus useful in the dilution calculations" end:"1392821859" entry:"1392502290" modified:"1392821859" project:"SANE" status:"completed" uuid:"5e8092ee-ff7b-43d6-8d73-c53504b09862"]
 [description:"RC for W and phi bins" end:"1391705132" entry:"1381338007" modified:"1391705132" status:"completed" uuid:"1ae91d25-59d0-47bc-87c7-ce3f0278d4f5"]
 [description:"Compare IRT from polrad to IRT using equivalent radiators" end:"1391703599" entry:"1381336995" modified:"1391703599" status:"completed" uuid:"f124b7cf-f76d-4da4-bf30-dadb0f31f906"]
 [description:"Check POLRAD born polarized cross sections agains POLRADs" end:"1391703582" entry:"1381419257" modified:"1391703582" status:"completed" uuid:"f6cbcbf4-a40e-4e1e-93a4-7e92df7cc9ef"]
