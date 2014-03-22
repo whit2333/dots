@@ -28,9 +28,12 @@
    gROOT->SetMacroPath(Form("%s:%s/main/scripts",gROOT->GetMacroPath(),gSystem->Getenv("InSANEDIR")));
 
    // NucDB Libraries
-   gSystem->AddIncludePath(" -I$NucDB_DIR/include ");
-   gSystem->Load("$NucDB_DIR/lib/libNucDB.so");
+   gSystem->AddIncludePath(" -I$HOME/include/NucDB  ");
+   gSystem->Load("libNucDB.so");
 
+   // WhitFit Libraries
+   gSystem->AddIncludePath(" -I$HOME/include/WhitFit  ");
+   gSystem->Load("libWhitFit.so");
 
    // ----------------------------------------------------------------------
    // Style
