@@ -278,6 +278,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=$HOME/lib:$HOME/lib64:$LD_LIBRARY_PATH
 
+export GCC_COLORS=1
 clear
 
 set -o vi

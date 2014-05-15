@@ -274,3 +274,11 @@ new [description:"Nachman moments" entry:"1394048257" project:"SANE" status:"pen
 time 1395343972
 new [description:"Florida til the 20th" due:"1397534400" entry:"1395343972" status:"pending" uuid:"0182689c-4ed8-45ec-bfe5-5668748ea27b"]
 ---
+time 1397268617
+old [description:"Poda coming" due:"1395979200" entry:"1394033406" status:"pending" uuid:"3b2ed9f8-2d50-46d2-977e-71358e567aab"]
+new [description:"Poda coming" due:"1395979200" end:"1397268617" entry:"1394033406" modified:"1397268617" status:"completed" uuid:"3b2ed9f8-2d50-46d2-977e-71358e567aab"]
+---
+time 1397269084
+old [description:"Buy part for smart car- Smart Fortwo Front Side Blinker Driver Side" entry:"1386363552" status:"pending" uuid:"1d40dc97-647e-47b6-9e70-acd71091c124"]
+new [description:"Buy part for smart car- Smart Fortwo Front Side Blinker Driver Side" end:"1397269084" entry:"1386363552" modified:"1397269084" status:"completed" uuid:"1d40dc97-647e-47b6-9e70-acd71091c124"]
+---

@@ -41,8 +41,11 @@
    gStyle->Reset();
    gROOT->LoadMacro("$HOME/.root/load_style.cxx");
 
-   load_style("SingleSquarePlot");
-   gROOT->SetStyle("SingleSquarePlot");
+   //load_style("SingleSquarePlot");
+   //gROOT->SetStyle("SingleSquarePlot");
+
+   load_style("MultiSquarePlot");
+   gROOT->SetStyle("MultiSquarePlot");
 
    //load_style("OldDefault");
    //gROOT->SetStyle("OldDefault");

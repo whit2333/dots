@@ -11,7 +11,7 @@ void MultiSquarePlot(){
    TStyle *sty  = new TStyle("MultiSquarePlot","Multi Square Plot Style");
 
    gStyle->SetPalette(1,0);
-   set_plot_style();
+   //set_plot_style();
 
    /// Turn off some borders
    sty->SetFrameBorderMode(0);
