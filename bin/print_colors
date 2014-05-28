@@ -1,0 +1,13 @@
+#!/bin/bash
+
+Ncol=8
+for i in $(seq 0 ${Ncol} 255)  
+do
+   max=`expr $i + ${Ncol}`
+   for j in $(seq ${i} ${max})
+   do
+      printf "\x1b[38;5;${j}mcolour${j} "; 
+   done
+   printf "\n"; 
+
+done
