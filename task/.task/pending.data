@@ -12,5 +12,5 @@
 [description:"Add QE radiative tail to Radiator" entry:"1393788011" project:"InSANE" status:"pending" uuid:"ea4a82f6-a270-4387-b76d-3a27b90d0705"]
 [description:"Nachman moments" entry:"1394048257" project:"SANE" status:"pending" uuid:"61672b9c-8eec-4323-a2bc-ae0f20cca83a"]
 [description:"DNP Hawaii abstract" due:"1404187200" entry:"1403541037" modified:"1403541116" priority:"H" status:"pending" uuid:"480db128-6f73-49be-803f-e3c5852f93a2"]
-[description:"Burning Man" end:"1409544000" entry:"1403541182" modified:"1403541246" start:"1408939200" status:"pending" uuid:"975fe428-804f-4d0b-a09f-9eb5de8ec7be"]
+[description:"Burning Man" due:"1408939200" end:"1409544000" entry:"1403541182" modified:"1403542686" start:"1408939200" status:"pending" uuid:"975fe428-804f-4d0b-a09f-9eb5de8ec7be"]
 [description:"Leave for burning man" due:"1408507200" entry:"1403542344" modified:"1403542387" status:"pending" uuid:"2b0fa53f-7d8a-463c-bc2b-d7efb3e3a4b4"]
