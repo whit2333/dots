@@ -12,9 +12,10 @@ alias wgetdir='wget -r -l1 --no-parent '
 
 alias mutt='TERM=xterm-256color LOCAL_MAIL_ACCOUNT=whit.temple /usr/bin/mutt'
 alias mutt-jlab='TERM=xterm-256color LOCAL_MAIL_ACCOUNT=whit.jlab /usr/bin/mutt'
-alias mutt-temple='TERM=xterm-256color LOCAL_MAIL_ACCOUNT=whit.temple /usr/bin/mutt'
+alias mutt-temple='LOCAL_MAIL_ACCOUNT=whit.temple /usr/bin/mutt'
 alias mutt-system='TERM=xterm-256color LOCAL_MAIL_ACCOUNT=whit.system /usr/bin/mutt'
 
+alias au='git ls-files -o --exclude-standard'
 #alias dir='ls --color=auto --format=vertical'
 #alias vdir='ls --color=auto --format=long'
 
