@@ -44,3 +44,4 @@ au! BufRead,BufNewFile /tmp/mutt-*    set fo+=aw
 " latex
 "au! BufRead,BufNewFile *.tex    set fo+=aw
 
+
