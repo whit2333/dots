@@ -17,7 +17,7 @@ let g:load_doxygen_syntax=1
 if has("autocmd")
 	  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
 	      \| exe "normal! g'\"" | endif
-  endif
+endif
 
 autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4
 

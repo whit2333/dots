@@ -17,7 +17,7 @@
    gSystem->Load("libFoam");
    gSystem->Load("libTreeViewer");
    gSystem->Load("libEG");
-   gSystem->Load("libPythia6"); // this has to be loaded before libInSANE ... don't know why
+   //gSystem->Load("libPythia6"); // this has to be loaded before libInSANE ... don't know why
    //gSystem->Load("libEGPythia6");
 
    // InSANE Libraries

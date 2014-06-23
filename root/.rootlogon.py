@@ -1,8 +1,10 @@
 #print 'o  Found .rootlogon.py !!!'
 import os
 from ROOT import gROOT,gSystem,gStyle
+gSystem.Load( 'libEve' )
 gSystem.Load( 'libFoam' )
 gSystem.Load( 'libTreeViewer' )
+gSystem.Load( 'libEG' )
 gSystem.Load( 'libInSANE' )
 gSystem.Load( 'libNucDB' )
 gStyle.SetStatColor(0)

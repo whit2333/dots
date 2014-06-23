@@ -38,11 +38,11 @@ void SingleSquarePlot(){
    sty->SetTitleFont(style_label_font,"z");
    sty->SetStatFont( style_label_font);
 
-   sty->SetLabelSize(0.025,"x");
+   sty->SetLabelSize(0.035,"x");
    sty->SetTitleSize(0.035,"x");
-   sty->SetLabelSize(0.025,"y");
+   sty->SetLabelSize(0.035,"y");
    sty->SetTitleSize(0.035,"y");
-   sty->SetLabelSize(0.025,"z");
+   sty->SetLabelSize(0.035,"z");
    sty->SetTitleSize(0.035,"z");
    sty->SetTitleSize(0.040,"");
 
