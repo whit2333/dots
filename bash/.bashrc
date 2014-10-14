@@ -69,6 +69,7 @@ export LESS_TERMCAP_so=$'\E[38;5;246m'    # begin standout-mode - info box
 export LESS_TERMCAP_ue=$'\E[0m'           # end underline
 export LESS_TERMCAP_us=$'\E[04;38;5;146m' # begin underline
 
+export GREP_OPTIONS='--color=auto'
 
 export PATH=$PATH:/usr/local/dawn_3_90b:/usr/local/root/bin
 
