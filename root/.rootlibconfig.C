@@ -3,7 +3,7 @@
    SANERunManager      * rman = SANERunManager::GetRunManager();
    SANEAnalysisManager * aman = SANEAnalysisManager::GetAnalysisManager();
    //aman->SetupFolders();
-   rman->SetVerbosity(1);
+   rman->SetVerbosity(0);
 
    using namespace CLHEP;
 

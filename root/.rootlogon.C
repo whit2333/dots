@@ -22,7 +22,8 @@
 
    // InSANE Libraries
    gSystem->AddIncludePath(" -I$HOME/include/InSANE");
-   //  The following line breaks ACLIC for some reason.... 
+   gSystem->AddIncludePath(" -I\"/home/whit/include/InSANE\"");
+   //The following line breaks ACLIC for some reason.... 
    //gSystem->AddIncludePath("$InSANEDIR/main"); // for generated ANNs
    gSystem->Load("libInSANE.so");
    gROOT->SetMacroPath(Form("%s:%s/main/scripts",gROOT->GetMacroPath(),gSystem->Getenv("InSANEDIR")));

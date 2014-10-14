@@ -371,3 +371,21 @@ time 1403542686
 old [description:"Burning Man" end:"1409544000" entry:"1403541182" modified:"1403541246" start:"1408939200" status:"pending" uuid:"975fe428-804f-4d0b-a09f-9eb5de8ec7be"]
 new [description:"Burning Man" due:"1408939200" end:"1409544000" entry:"1403541182" modified:"1403542686" start:"1408939200" status:"pending" uuid:"975fe428-804f-4d0b-a09f-9eb5de8ec7be"]
 ---
+time 1404924009
+new [description:"Train gamma nn with thrown gammas and pi0s" entry:"1404924009" status:"pending" uuid:"e69c2ef0-d432-45ec-9dfa-1af74de3443d"]
+---
+time 1407176724
+old [description:"DNP Hawaii abstract" due:"1404187200" entry:"1403541037" modified:"1403541116" priority:"H" status:"pending" uuid:"480db128-6f73-49be-803f-e3c5852f93a2"]
+new [description:"DNP Hawaii abstract" due:"1404187200" end:"1407176724" entry:"1403541037" modified:"1407176724" priority:"H" status:"completed" uuid:"480db128-6f73-49be-803f-e3c5852f93a2"]
+---
+time 1407176757
+new [description:"Wedding trip" entry:"1407176757" status:"pending" uuid:"815aacf1-ee8e-42a3-a991-72dddb64631a"]
+---
+time 1407858084
+old [description:"Clint and Krista wedding" due:"1407556800" entry:"1392434844" modified:"1392436959" project:"wedding" status:"pending" tags:"wedding" uuid:"be5bbbf1-5879-4969-9647-232a164b71d2"]
+new [description:"Clint and Krista wedding" due:"1407556800" end:"1407858084" entry:"1392434844" modified:"1407858084" project:"wedding" status:"completed" tags:"wedding" uuid:"be5bbbf1-5879-4969-9647-232a164b71d2"]
+---
+time 1407858099
+old [description:"Wedding trip" entry:"1407176757" status:"pending" uuid:"815aacf1-ee8e-42a3-a991-72dddb64631a"]
+new [description:"Wedding trip" end:"1407858099" entry:"1407176757" modified:"1407858099" status:"completed" uuid:"815aacf1-ee8e-42a3-a991-72dddb64631a"]
+---
