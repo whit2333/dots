@@ -38,12 +38,12 @@ void SingleSquarePlot(){
    sty->SetTitleFont(style_label_font,"z");
    sty->SetStatFont( style_label_font);
 
-   sty->SetLabelSize(0.035,"x");
-   sty->SetTitleSize(0.035,"x");
-   sty->SetLabelSize(0.035,"y");
-   sty->SetTitleSize(0.035,"y");
-   sty->SetLabelSize(0.035,"z");
-   sty->SetTitleSize(0.035,"z");
+   sty->SetLabelSize(0.05,"x");
+   sty->SetTitleSize(0.05,"x");
+   sty->SetLabelSize(0.05,"y");
+   sty->SetTitleSize(0.05,"y");
+   sty->SetLabelSize(0.05,"z");
+   sty->SetTitleSize(0.05,"z");
    sty->SetTitleSize(0.040,"");
 
    sty->SetTitleAlign(23);
@@ -64,6 +64,17 @@ void SingleSquarePlot(){
 
    sty->SetFuncWidth(2);
    sty->SetFuncColor(2);
+
+   // -----------------------------------------
+   // Set margins for axes labels and titles
+   sty->SetPadTopMargin(0.1);
+   sty->SetPadBottomMargin(0.15);
+   sty->SetPadLeftMargin(0.15);
+   sty->SetPadRightMargin(0.1);
+
+   // -----------------------------------------
+   // Set the offset of the title's from the axes' numbers
+   sty->SetTitleOffset(1.25,"xyz");
 
    //sty->SetAxisColor(1,"xyz");
    //sty->SetCanvasColor(0);
@@ -138,12 +149,6 @@ void SingleSquarePlot(){
    //sty->SetTitleStyle(0);
    //sty->SetFuncStyle(1);
 
-   ///// Set margins 
-   //sty->SetPadTopMargin(0.09);
-   //sty->SetPadBottomMargin(0.12);
-   //sty->SetPadBottomMargin(0.09);
-   //sty->SetPadLeftMargin(0.09);
-   //sty->SetPadRightMargin(0.09);
 
    ///// Log axes
    //sty->SetOptLogx(0);
