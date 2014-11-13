@@ -1,4 +1,5 @@
 [description:"clean up Radcor" entry:"1393787996" project:"InSANE" status:"pending" uuid:"f336ab7e-ab82-4962-96d5-4cae51cea7ed"]
 [description:"Add QE radiative tail to Radiator" entry:"1393788011" project:"InSANE" status:"pending" uuid:"ea4a82f6-a270-4387-b76d-3a27b90d0705"]
 [description:"Nachman moments" entry:"1394048257" project:"SANE" status:"pending" uuid:"61672b9c-8eec-4323-a2bc-ae0f20cca83a"]
-[description:"Investigate QE tail to target and background dilutions" entry:"1415847752" status:"pending" uuid:"79ad9648-68de-466d-930d-d363cbdb1e65"]
+[description:"Investigate QE tail to target and background dilutions" entry:"1415847752" modified:"1415848713" project:"SANE" status:"pending" uuid:"79ad9648-68de-466d-930d-d363cbdb1e65"]
+[description:"ZE DOE update" entry:"1415848659" modified:"1415848700" priority:"H" status:"pending" uuid:"ad5670c9-6c69-48b6-a556-76868d96d7f8"]

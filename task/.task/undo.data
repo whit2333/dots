@@ -440,3 +440,14 @@ time 1415848461
 old [description:"Train gamma nn with thrown gammas and pi0s" entry:"1404924009" status:"pending" uuid:"e69c2ef0-d432-45ec-9dfa-1af74de3443d"]
 new [description:"Train gamma nn with thrown gammas and pi0s" end:"1415848461" entry:"1404924009" modified:"1415848461" status:"completed" uuid:"e69c2ef0-d432-45ec-9dfa-1af74de3443d"]
 ---
+time 1415848659
+new [description:"ZE DOE update" entry:"1415848659" status:"pending" uuid:"ad5670c9-6c69-48b6-a556-76868d96d7f8"]
+---
+time 1415848700
+old [description:"ZE DOE update" entry:"1415848659" status:"pending" uuid:"ad5670c9-6c69-48b6-a556-76868d96d7f8"]
+new [description:"ZE DOE update" entry:"1415848659" modified:"1415848700" priority:"H" status:"pending" uuid:"ad5670c9-6c69-48b6-a556-76868d96d7f8"]
+---
+time 1415848713
+old [description:"Investigate QE tail to target and background dilutions" entry:"1415847752" status:"pending" uuid:"79ad9648-68de-466d-930d-d363cbdb1e65"]
+new [description:"Investigate QE tail to target and background dilutions" entry:"1415847752" modified:"1415848713" project:"SANE" status:"pending" uuid:"79ad9648-68de-466d-930d-d363cbdb1e65"]
+---
