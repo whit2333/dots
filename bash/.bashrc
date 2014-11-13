@@ -80,7 +80,7 @@ export PATH=$PATH:/usr/local/dawn_3_90b:/usr/local/root/bin
 #export G4WORKDIR=/mnt/scratch/g4work:
 #LD_LIB...$G4INSTALL/lib
 # new style:
-export G4INSTALL=/usr/local/geant4
+export G4INSTALL=/usr/local
 source $G4INSTALL/bin/geant4.sh
 
 #export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$
