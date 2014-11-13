@@ -2,6 +2,21 @@
 
 # This scripts creates all the links in the home directory
 
+files=("bash/.bashrc"
+       "bash/.inputrc"
+       "bash/.bash_aliases"
+       "tmux/.tmux.conf"
+       "ssh/.ssh"
+       "vim/.vim"
+       "vim/.vimrc"
+       "git/.gitconfig"
+       "root/.root"
+       "root/.rootlogon.C"
+       "root/.rootlogon.py"
+       "root/.rootlibconfig.C"
+       "root/.rootrc"
+       )
+
 dots_dir=$HOME/dots
 backup_dir=$(mktemp -d -p $dots_dir)
 if [[ $? != 0 ]] ; then
@@ -16,17 +31,18 @@ link_file() {
    curdir=$(pwd)
    cd $HOME
    if [[ -n "$1" ]] ; then
-      if [[ -e "$1" ]] ; then
-         mv $1 $backup_dir/.
-      fi
       file_name=$(basename $1)
+      dir_name=$(dirname $1)
+      if [[ -e "$file_name" ]] ; then
+         mkdir -p $backup_dir/$dir_name
+         mv $file_name $backup_dir/$1
+      fi
       echo "ln -s $dots_dir/$1 $file_name"
+      ln -s $dots_dir/$1 $file_name
    fi
    cd $curdir
 }
 
-
-files=("bash/.bashrc" "bash/.inputrc" "bash/.bash_aliases")
 
 
 for afile in "${files[@]}" 
