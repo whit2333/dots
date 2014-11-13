@@ -451,3 +451,10 @@ time 1415848713
 old [description:"Investigate QE tail to target and background dilutions" entry:"1415847752" status:"pending" uuid:"79ad9648-68de-466d-930d-d363cbdb1e65"]
 new [description:"Investigate QE tail to target and background dilutions" entry:"1415847752" modified:"1415848713" project:"SANE" status:"pending" uuid:"79ad9648-68de-466d-930d-d363cbdb1e65"]
 ---
+time 1415848800
+new [description:"finalize cherenkov paper" entry:"1415848800" status:"pending" uuid:"8f6917fb-1cbb-4fe3-850f-8fcfcf4182bc"]
+---
+time 1415848826
+old [description:"finalize cherenkov paper" entry:"1415848800" status:"pending" uuid:"8f6917fb-1cbb-4fe3-850f-8fcfcf4182bc"]
+new [description:"finalize cherenkov paper" entry:"1415848800" modified:"1415848826" priority:"H" status:"pending" uuid:"8f6917fb-1cbb-4fe3-850f-8fcfcf4182bc"]
+---
