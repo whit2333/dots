@@ -32,15 +32,38 @@ link_file() {
    # First argument is the file
    curdir=$(pwd)
    cd $HOME
+   copyfiles=
    if [[ -n "$1" ]] ; then
       file_name=$(basename $1)
       dir_name=$(dirname $1)
       if [[ -e "$file_name" ]] ; then
+
+         # check if file linke is a directory
+         if [[ -d $file_name ]] ; then
+            # compare the existing directory contents with the linking directory
+            contents=$(ls $file_name)
+            #echo "$file_name is a directory with contents"
+            #echo $contents
+            contents2=$(ls $dots_dir/$1/)
+            #echo $contents2
+            contents3=$(echo $contents $contents2 | sed 's/ /\n/g' |  sort | uniq -u)
+            contents4=$(echo $contents3 $contents2 | sed 's/ /\n/g' |  sort | uniq -u)
+            echo "Need to copy $contents4"
+            copyfiles=$contents4
+         fi
          mkdir -p $backup_dir/$dir_name
          mv $file_name $backup_dir/$1
       fi
       #echo "ln -s $dots_dir/$1 $file_name"
       ln -s $dots_dir/$1 $file_name
+
+      # copy (uniq) existing files into directory
+      if [[ -n "$copyfiles" ]] ; then
+         for cfile in $copyfiles ; do 
+            echo "copying $cfile"
+            cp -r $backup_dir/$1/$cfile $file_name/.
+         done
+      fi
    fi
    cd $curdir
 }
