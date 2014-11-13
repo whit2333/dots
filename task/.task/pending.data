@@ -11,3 +11,4 @@
 [description:"Add QE radiative tail to Radiator" entry:"1393788011" project:"InSANE" status:"pending" uuid:"ea4a82f6-a270-4387-b76d-3a27b90d0705"]
 [description:"Nachman moments" entry:"1394048257" project:"SANE" status:"pending" uuid:"61672b9c-8eec-4323-a2bc-ae0f20cca83a"]
 [description:"Train gamma nn with thrown gammas and pi0s" entry:"1404924009" status:"pending" uuid:"e69c2ef0-d432-45ec-9dfa-1af74de3443d"]
+[description:"Investigate QE tail to target and background dilutions" entry:"1415847752" status:"pending" uuid:"79ad9648-68de-466d-930d-d363cbdb1e65"]

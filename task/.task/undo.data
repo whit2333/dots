@@ -397,3 +397,6 @@ time 1415847734
 old [description:"Leave for burning man" due:"1408507200" entry:"1403542344" modified:"1403542387" status:"pending" uuid:"2b0fa53f-7d8a-463c-bc2b-d7efb3e3a4b4"]
 new [description:"Leave for burning man" due:"1408507200" end:"1415847734" entry:"1403542344" modified:"1415847734" status:"completed" uuid:"2b0fa53f-7d8a-463c-bc2b-d7efb3e3a4b4"]
 ---
+time 1415847752
+new [description:"Investigate QE tail to target and background dilutions" entry:"1415847752" status:"pending" uuid:"79ad9648-68de-466d-930d-d363cbdb1e65"]
+---
