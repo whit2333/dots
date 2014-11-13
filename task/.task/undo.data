@@ -389,3 +389,6 @@ time 1407858099
 old [description:"Wedding trip" entry:"1407176757" status:"pending" uuid:"815aacf1-ee8e-42a3-a991-72dddb64631a"]
 new [description:"Wedding trip" end:"1407858099" entry:"1407176757" modified:"1407858099" status:"completed" uuid:"815aacf1-ee8e-42a3-a991-72dddb64631a"]
 ---
+time 1415847752
+new [description:"Investigate QE tail to target and background dilutions" entry:"1415847752" status:"pending" uuid:"79ad9648-68de-466d-930d-d363cbdb1e65"]
+---
