@@ -40,8 +40,25 @@ nmap        ++ vip++
 
 " mutt
 au! BufRead,BufNewFile /tmp/mutt-*    set fo+=aw
+autocmd BufRead,BufNewFile /tmp/mutt-* setlocal spell
+autocmd BufRead,BufNewFile /tmp/mutt-* set complete+=kspell
 
-" latex
+" md
+autocmd BufRead,BufNewFile *.md setlocal spell
+autocmd BufRead,BufNewFile *.md set complete+=kspell
+
+" tex
+autocmd BufRead,BufNewFile *.tex setlocal spell
+autocmd BufRead,BufNewFile *.tex set complete+=kspell
+au! BufRead,BufNewFile *.tex    set fo+=aw
+
+" html
+autocmd BufRead,BufNewFile *.html setlocal spell
+autocmd BufRead,BufNewFile *.html set complete+=kspell
 "au! BufRead,BufNewFile *.tex    set fo+=aw
+
+" git
+autocmd FileType gitcommit setlocal spell
+
 
 
