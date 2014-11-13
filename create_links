@@ -1,0 +1,57 @@
+#!/bin/bash
+
+# This scripts creates all the links in the home directory
+
+files=("bash/.bashrc"
+       "bash/.inputrc"
+       "bash/.bash_aliases"
+       "tmux/.tmux.conf"
+       "ssh/.ssh"
+       "vim/.vim"
+       "vim/.vimrc"
+       "git/.gitconfig"
+       "root/.root"
+       "root/.rootlogon.C"
+       "root/.rootlogon.py"
+       "root/.rootlibconfig.C"
+       "root/.rootrc"
+       )
+
+dots_dir=$HOME/dots
+backup_dir=$(mktemp -d -p $dots_dir)
+if [[ $? != 0 ]] ; then
+   echo "error: Failed to create backup directory in $dots_dir"
+fi
+echo "Created backup directory $backup_dir" 
+
+link_file() {
+   # Utility function to link file
+   # If file exists it is backed up in the tmp directory
+   # First argument is the file
+   curdir=$(pwd)
+   cd $HOME
+   if [[ -n "$1" ]] ; then
+      file_name=$(basename $1)
+      dir_name=$(dirname $1)
+      if [[ -e "$file_name" ]] ; then
+         mkdir -p $backup_dir/$dir_name
+         mv $file_name $backup_dir/$1
+      fi
+      echo "ln -s $dots_dir/$1 $file_name"
+      ln -s $dots_dir/$1 $file_name
+   fi
+   cd $curdir
+}
+
+
+
+for afile in "${files[@]}" 
+do
+   read -p "Link $afile?" yn
+   case $yn in
+      [Yy]* ) echo "linking $afile";
+              link_file $afile;; 
+          * ) echo "skipping $afile";;
+   esac
+done
+
