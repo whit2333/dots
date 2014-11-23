@@ -10,9 +10,6 @@ void MultiSquarePlot(){
 
    TStyle *sty  = new TStyle("MultiSquarePlot","Multi Square Plot Style");
 
-   gStyle->SetPalette(1,0);
-   //set_plot_style();
-
    /// Turn off some borders
    sty->SetFrameBorderMode(0);
    sty->SetFrameFillColor(0);
@@ -41,13 +38,13 @@ void MultiSquarePlot(){
    sty->SetTitleFont(style_label_font,"z");
    sty->SetStatFont( style_label_font);
 
-   sty->SetLabelSize(0.045,"x");
-   sty->SetTitleSize(0.035,"x");
-   sty->SetLabelSize(0.045,"y");
-   sty->SetTitleSize(0.035,"y");
-   sty->SetLabelSize(0.045,"z");
-   sty->SetTitleSize(0.035,"z");
-   sty->SetTitleSize(0.050,"");
+   sty->SetLabelSize(0.08,"x");
+   sty->SetTitleSize(0.08,"x");
+   sty->SetLabelSize(0.08,"y");
+   sty->SetTitleSize(0.08,"y");
+   sty->SetLabelSize(0.08,"z");
+   sty->SetTitleSize(0.08,"z");
+   sty->SetTitleSize(0.040,"");
 
    sty->SetTitleAlign(23);
    sty->SetTitleX(0.5);
@@ -68,20 +65,22 @@ void MultiSquarePlot(){
    sty->SetFuncWidth(2);
    sty->SetFuncColor(2);
 
-   //sty->SetAxisColor(1,"xyz");
-   //sty->SetCanvasColor(0);
-   //sty->SetFrameFillColor(0);
-   //sty->SetFrameLineColor(1);
-   //sty->SetHistFillColor(0);
-   //sty->SetHistLineColor(1);
-   ////sty->SetPadColor(40);
-   //sty->SetPadColor(kWhite);
-   //sty->SetTitleColor(1);
-   //sty->SetTitleTextColor(1);
-   //sty->SetLabelColor(1,"xyz");
+   // -----------------------------------------
+   // Set margins for axes labels and titles
+   sty->SetPadTopMargin(0.1);
+   sty->SetPadBottomMargin(0.15);
+   sty->SetPadLeftMargin(0.15);
+   sty->SetPadRightMargin(0.1);
 
+   // -----------------------------------------
+   // Set the offset of the title's from the axes' numbers
+   sty->SetTitleOffset(1.00,"x");
+   sty->SetTitleOffset(0.80,"yz");
 
-   ///// Set the size of the default canvas
+   TGaxis::SetMaxDigits(4); // restrict the number of digits in labels
+   sty->SetStripDecimals(true); // Stip 0 decimals, ie,  1.0 -> 1
+
+   // Set the size of the default canvas
    sty->SetCanvasDefH(800);
    sty->SetCanvasDefW(900);
    ////sty->SetCanvasDefX(10);
@@ -104,9 +103,7 @@ void MultiSquarePlot(){
    //sty->SetLabelOffset(0.009,"xz");
    //sty->SetTitleSize(0.09,"xyz"); // axis titles
    //sty->SetTitleOffset(1.005,"xyz");
-   ////sty->SetStripDecimals(kFALSE); // if we have 1.5 do not set 1.0 -> 1
 
-   //TGaxis::SetMaxDigits(4); // restrict the number of digits in labels
    //sty->SetLabelColor(1,"xyz");
 
    ////sty->SetStatFont(style_label_font);
@@ -141,12 +138,6 @@ void MultiSquarePlot(){
    //sty->SetTitleStyle(0);
    //sty->SetFuncStyle(1);
 
-   ///// Set margins 
-   //sty->SetPadTopMargin(0.09);
-   //sty->SetPadBottomMargin(0.12);
-   //sty->SetPadBottomMargin(0.09);
-   //sty->SetPadLeftMargin(0.09);
-   //sty->SetPadRightMargin(0.09);
 
    ///// Log axes
    //sty->SetOptLogx(0);

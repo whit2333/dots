@@ -74,22 +74,13 @@ void SingleSquarePlot(){
 
    // -----------------------------------------
    // Set the offset of the title's from the axes' numbers
-   sty->SetTitleOffset(1.25,"xyz");
+   sty->SetTitleOffset(1.25,"x");
+   sty->SetTitleOffset(1.25,"yz");
 
-   //sty->SetAxisColor(1,"xyz");
-   //sty->SetCanvasColor(0);
-   //sty->SetFrameFillColor(0);
-   //sty->SetFrameLineColor(1);
-   //sty->SetHistFillColor(0);
-   //sty->SetHistLineColor(1);
-   ////sty->SetPadColor(40);
-   //sty->SetPadColor(kWhite);
-   //sty->SetTitleColor(1);
-   //sty->SetTitleTextColor(1);
-   //sty->SetLabelColor(1,"xyz");
+   TGaxis::SetMaxDigits(4); // restrict the number of digits in labels
+   sty->SetStripDecimals(true); // Stip 0 decimals, ie,  1.0 -> 1
 
-
-   ///// Set the size of the default canvas
+   // Set the size of the default canvas
    sty->SetCanvasDefH(800);
    sty->SetCanvasDefW(900);
    ////sty->SetCanvasDefX(10);
@@ -112,9 +103,7 @@ void SingleSquarePlot(){
    //sty->SetLabelOffset(0.009,"xz");
    //sty->SetTitleSize(0.09,"xyz"); // axis titles
    //sty->SetTitleOffset(1.005,"xyz");
-   ////sty->SetStripDecimals(kFALSE); // if we have 1.5 do not set 1.0 -> 1
 
-   //TGaxis::SetMaxDigits(4); // restrict the number of digits in labels
    //sty->SetLabelColor(1,"xyz");
 
    ////sty->SetStatFont(style_label_font);
