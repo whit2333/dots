@@ -37,6 +37,7 @@ void MultiSquarePlot(){
    sty->SetLabelFont(style_label_font,"z");
    sty->SetTitleFont(style_label_font,"z");
    sty->SetStatFont( style_label_font);
+   sty->SetTextFont(style_label_font); // sets the default font (for everything?)
 
    sty->SetLabelSize(0.08,"x");
    sty->SetTitleSize(0.08,"x");

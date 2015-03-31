@@ -8,6 +8,8 @@ filetype indent on      " activates indenting for files
 "set nu                  " line numbers
 set ic                  " case insensitive search
 
+"colorscheme  flattened_dark      " colorscheme desert
+":let g:solarized_termcolors = 256
 colorscheme wombat      " colorscheme desert
 
 let g:load_doxygen_syntax=1
@@ -48,9 +50,9 @@ autocmd BufRead,BufNewFile *.md setlocal spell
 autocmd BufRead,BufNewFile *.md set complete+=kspell
 
 " tex
+au! BufRead,BufNewFile *.tex    set fo+=aw
 autocmd BufRead,BufNewFile *.tex setlocal spell
 autocmd BufRead,BufNewFile *.tex set complete+=kspell
-au! BufRead,BufNewFile *.tex    set fo+=aw
 
 " html
 autocmd BufRead,BufNewFile *.html setlocal spell
@@ -62,4 +64,6 @@ autocmd BufRead,BufNewFile *.html set complete+=kspell
 autocmd FileType gitcommit setlocal spell
 
 set restorescreen=on
+
+"let g:ycm_global_ycm_extra_conf = "~/.vim/ycm_extra_conf.py"
 

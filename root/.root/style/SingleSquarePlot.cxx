@@ -37,8 +37,9 @@ void SingleSquarePlot(){
    sty->SetLabelFont(style_label_font,"z");
    sty->SetTitleFont(style_label_font,"z");
    sty->SetStatFont( style_label_font);
+   sty->SetTextFont(style_label_font); // sets the default font (for everything?)
 
-   sty->SetLabelSize(0.05,"x");
+   sty->SetLabelSize(0.05,"x"); 
    sty->SetTitleSize(0.05,"x");
    sty->SetLabelSize(0.05,"y");
    sty->SetTitleSize(0.05,"y");
@@ -75,7 +76,7 @@ void SingleSquarePlot(){
    // -----------------------------------------
    // Set the offset of the title's from the axes' numbers
    sty->SetTitleOffset(1.25,"x");
-   sty->SetTitleOffset(1.25,"yz");
+   sty->SetTitleOffset(1.35,"yz");
 
    TGaxis::SetMaxDigits(4); // restrict the number of digits in labels
    sty->SetStripDecimals(true); // Stip 0 decimals, ie,  1.0 -> 1

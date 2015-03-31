@@ -36,6 +36,9 @@
    gSystem->AddIncludePath(" -I$HOME/include/WhitFit  ");
    gSystem->Load("libWhitFit.so");
 
+   gSystem->AddIncludePath(" -I$HOME/include/SANEFit  ");
+   gSystem->Load("libSANEFit.so");
+
    // ----------------------------------------------------------------------
    // Style
    // ----------------------------------------------------------------------
@@ -52,8 +55,9 @@
    //gROOT->SetStyle("OldDefault");
 
    // load some useful scripts Creates a nice color palette
-   gROOT->LoadMacro(Form("%s/src/set_plot_style.cxx",gSystem->Getenv("HOME") ) );
    gROOT->LoadMacro(Form("%s/src/color_scheme.cxx",gSystem->Getenv("HOME") ) );
+   gROOT->LoadMacro(Form("%s/src/set_plot_style.cxx",gSystem->Getenv("HOME") ) );
+   gROOT->LoadMacro(Form("%s/src/nice_markers.cxx",gSystem->Getenv("HOME") ) );
 
 
    ///// use a pretty palette for color plots

@@ -3,3 +3,4 @@
 Browser.Name: TRootBrowser
 OpenGL.SavePicturesViaFBO: off
 #Root.DatabasePDG: /home/whit/.pdg_table.txt
+flagOpenGL.CanvasPreferGL: 1

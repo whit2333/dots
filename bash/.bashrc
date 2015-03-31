@@ -114,8 +114,8 @@ export LD_LIBRARY_PATH=$ROOTSYS/lib:$LD_LIBRARY_PATH
 export PATH=$ROOTSYS/bin:$PATH
 
 # xrood
-export PATH=$PATH:/usr/local/xrootd-3.2.7/bin
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/xrootd-3.2.7/lib
+#export PATH=$PATH:/usr/local/xrootd-3.2.7/bin
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/xrootd-3.2.7/lib
 
 # InSANE
 export InSANEDIR=/home/whit/sane08/InSANE
@@ -132,15 +132,15 @@ export InSANE_DB_SERVER=quarks.temple.edu
 
 
 #Xerces
-export XERCESCROOT=/usr/local/xerces-c-src_2_7_0
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/xerces-c-src_2_7_0/lib
+#export XERCESCROOT=/usr/local/xerces-c-src_2_7_0
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/xerces-c-src_2_7_0/lib
 
-#Qt
-export QTDIR=/usr/local/Trolltech/Qt-4.8.3
-#/usr/local/qt
-#export PATH=$PATH:$QTDIR/bin
-#export MANPATH=$MANPATH:QTDIR/doc/man
-export LD_LIBRARY_PATH=$QTDIR/lib:$LD_LIBRARY_PATH
+##Qt
+#export QTDIR=/usr/local/Trolltech/Qt-4.8.3
+##/usr/local/qt
+##export PATH=$PATH:$QTDIR/bin
+##export MANPATH=$MANPATH:QTDIR/doc/man
+#export LD_LIBRARY_PATH=$QTDIR/lib:$LD_LIBRARY_PATH
 
 
 #cal/include/qt
@@ -151,12 +151,12 @@ export LD_LIBRARY_PATH=$QTDIR/lib:$LD_LIBRARY_PATH
 #export XMFLAGS=" -I/usr"
 #export XMLIBS=" -L/usr/lib -lXm -lXpm"
 
-# Java
-#export JAVA_HOME=/usr/lib/jvm/java-7-icedtea
-#export JDK_HOME=/usr/lib/jvm/java-7-icedtea
-export JAVA_HOME=/usr/java/jdk1.6.0_21
-export JAVA_BINDIR=$JAVA_HOME/bin
-export CLASSPATH="$CLASSPATH;$HOME/lib;/usr/java/lib;./lib;"
+## Java
+##export JAVA_HOME=/usr/lib/jvm/java-7-icedtea
+##export JDK_HOME=/usr/lib/jvm/java-7-icedtea
+#export JAVA_HOME=/usr/java/jdk1.6.0_21
+#export JAVA_BINDIR=$JAVA_HOME/bin
+#export CLASSPATH="$CLASSPATH;$HOME/lib;/usr/java/lib;./lib;"
 # Java based tools 
 #export JAIDA_HOME=/usr/local/JAIDA-3.2.4
 #source $JAIDA_HOME/bin/aida-setup.sh
@@ -173,28 +173,29 @@ export CLASSPATH="$CLASSPATH;$HOME/lib;/usr/java/lib;./lib;"
 #set to 1 for debugging
 #export JNI_SHOW_DEBUG=0
 
-export GCCXMLPATH=/usr/local
+#export GCCXMLPATH=/usr/local
 
 
-# CERNLIB
-export CERN=/home/whit/cernlib
-#export CERN=/home/whit/cernlib_gcc43
-export CERN_LEVEL=2006b
-export CERN_ROOT=$CERN/$CERN_LEVEL
-#export CVSCOSRC=$CERN/$CERN_LEVEL/src
-export PATH=$CERN_ROOT/bin:$PATH
+## CERNLIB
+#export CERN=/usr/
+##export CERN=/home/whit/cernlib_gcc43
+#export CERN_LEVEL=2006b
+#export CERN_ROOT=$CERN/$CERN_LEVEL
+##export CVSCOSRC=$CERN/$CERN_LEVEL/src
+#export PATH=$CERN_ROOT/bin:$PATH
 
-#export CERNLIB=/usr/lib
+export CERNLIB=/usr/lib/x86_64-linux-gnu
+export CERN_ROOT=/usr/lib/x86_64-linux-gnu
 
 # HALL A ANALYZER OLD
 #export DB_DIR=/usr/local/analyzer-1.4.9
 #export PATH=$PATH:/usr/local/Canalyzer-1.5.12
 #export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/Canalyzer-1.5.12
 
-# HALL C ANALYZER
-export CVSROOT=whit@cvs.jlab.org:/group/hallc/cvsroot
-export ANALYZER=/home/whit/hcana/podd
-#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$ANALYZER:$ANALYZER/podd
+## HALL C ANALYZER
+#export CVSROOT=whit@cvs.jlab.org:/group/hallc/cvsroot
+#export ANALYZER=/home/whit/hcana/podd
+##export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$ANALYZER:$ANALYZER/podd
 
 
 export EDITOR=vim
@@ -215,8 +216,8 @@ export EDITOR=vim
 #export M2_HOME=/usr/local/apache-maven-2.2.1
 #export PATH=$PATH:${M2_HOME}/bin
 
-export PATH=$PATH:/usr/local/nanoblogger
-export BLOG_DIR=/home/whit/public_html/femtoblog
+#export PATH=$PATH:/usr/local/nanoblogger
+#export BLOG_DIR=/home/whit/public_html/femtoblog
 
 ## exjpsi
 ## set the experiment group disk location
@@ -258,10 +259,10 @@ export BLOG_DIR=/home/whit/public_html/femtoblog
   export PYTHONPATH=$PYTHONPATH:$NucDB_DIR/python    
 
 # PYTHIA6
-  export PYTHIA6=/usr/local/pythia6
+#  export PYTHIA6=/usr/local/pythia6
 
 # GLOBUS
-  export PATH=$PATH:/home/globus/bin
+#  export PATH=$PATH:/home/globus/bin
 
 # gcc 
 #  export GCCDIR=$HOME/gcc/4.8.2
@@ -296,4 +297,5 @@ export MANPATH=$HOME/share/man:$MANPATH
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
+
 

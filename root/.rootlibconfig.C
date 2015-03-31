@@ -28,4 +28,9 @@
    set_color_scheme(60,0,30,50,col=8000);
    set_color_scheme(30,40,30,50,col=9000);
    set_color_scheme(23,100,50,0,col=10000);
+
+   // Creates nice markers in a logical order
+   nice_markers();
+   nice_colors();
+
 }
